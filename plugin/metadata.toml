@@ -1,0 +1,5 @@
+[metadata]
+name = "vplugin-example-plugin"
+version = "0.1.0"
+objfile = "plugin.obj"
+description = "Simple plugin for vplugin-example that will change the window color on each redraw."
