@@ -61,7 +61,6 @@ fn main() {
          * for your program and if any required symbols are missing.
          */
         for plugin in plugins.iter_mut() {
-            plugin.load_metadata().expect("Failed to load metadata");
             plug_mgr.begin_plugin(plugin).expect("Couldn't start plugin.");
 
             let redraw_hook = plug_mgr.get_custom_hook::<(), ()>(&plugin, "vplugin_example_on_redraw");
@@ -101,9 +100,6 @@ fn main() {
                         _ => {},
                     }
                 }
-        }
-        for plug in plugins {
-            unsafe { plug.force_terminate() }
         }
         plug_mgr.shutdown()
 }
