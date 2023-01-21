@@ -21,8 +21,7 @@ $ cargo install vplugin-example
 The first one is the latest possible version you can get, use it for the latest features.
 
 # Plugin Support
-The plugins should be conforming to the [VPlugin Plugin Format](https://github.com/VPlugin/VPlugin/blob/master/spec/PluginFormat.md). The entry point should be named `vplugin_example_init`.
-To learn about recognizable hooks, see [docs/plugins.rs](docs/plugins.rs)
+The plugins should be conforming to the [VPlugin Plugin Format](https://github.com/VPlugin/VPlugin/blob/master/spec/PluginFormat.md). The entry point should be named `vplugin_example_init`.\
 
 # License
 This application is released under the MIT license. For more information, see [LICENSE](LICENSE).
