@@ -9,13 +9,11 @@ keywords = [
         "graphics",
         "vplugin"
 ]
-category = "example"
 
 [dependencies]
 glfw    = "0.49.1"
-vplugin = { path = "../VPlugin" }
+vplugin = { git = "https://github.com/VPlugin/VPlugin.git" }
 env_logger = "0.10.0"
 
 [profile.release]
 lto   = true
-panic = "abort"
