@@ -101,5 +101,4 @@ fn main() {
                     }
                 }
         }
-        plug_mgr.shutdown()
 }
